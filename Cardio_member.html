@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="ISO-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership</title>
+        <!--fontawesome link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            body{
+                background-image: url("mg1.jpg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                
+            }
+         
+        a{
+            text-decoration: none;
+            color: white;
+        }
+  
+        
+        
+        button{
+            background-color: black;
+            border: none;
+        	border-radius: 10px;
+        	padding: 20px;
+        	width: 100px;
+        	margin-left: 50px;
+        }
+        /* .d1{
+            float: left;
+        } */
+       .d2{
+        color: white;
+        float: right;
+       }
+       span{
+        float: left;
+        margin-top: 80px;
+       }
+       /* .f1{
+        margin-left: 270px;
+       } */
+       .f1{
+        margin-left: 300px;
+        font-size: larger;
+        font-weight: bold;
+        color: black;
+       }
+       .s2{
+        float:right;
+        margin: -135px 600px 30px 50px;
+       }
+       .h1{
+        color: aliceblue;
+       }
+       
+       .btn{
+            padding: 10px 10px;
+            border-radius: 10px;
+            float: left;
+            width: 50px; 
+            background-color: grey;
+        }
+
+       #i1{width: 220px;}
+       #i2{width: 230px;}
+       #i3{width: 220px;}
+       h2{
+        text-align: center;
+        color: white;
+       }
+        </style>
+</head>
+<body>
+    <h2>Our Member-Ship</h2>
+    <!--  <div class="d1">
+       <span>
+        <button><abbr title="1-week"><a href="1week.html">1 Week</a></abbr></button><br><br>
+       <button><abbr title="1-month"><a href="oneMonth.html">1 Month</a></abbr></button><br><br>
+       <button><abbr title="2-months"><a href="twomonth.html">2 Months</a></abbr></button><br><br>
+       <button><abbr title="3-months"><a href="3month.html">3 Months</a></abbr></button><br><br>
+       
+       
+       </span>
+    </div>-->
+    
+    <div class="d2">
+        <h3>Cardio Challenge</h3>
+        <p class="p1">If you want to join our Challenge, you have to have a strong attitude and a desire to do it.
+            Our Challenge include these process to do in Cardio package.
+        </p>
+        <ul>
+            <li>Diet</li>
+            <li>Workout</li>
+            <li>Water Balance</li>
+            <li>Daily Remainder</li>
+        </ul>
+        
+        <p>If you want to join to our challenge package.
+            Please send your information to Us</p>
+          <form action="CardioMemberShipServlet" class="form" method="post">
+          
+            Name: <input type="text" name="name" id="i1" placeholder="your name..."><br><br>
+            Age:  <input type="text" name="age" id="i2" placeholder="your age..."><br><br>
+            Email: <input type="email" name="email" id="i3" placeholder="your email..."><br><br>
+            Phone Number: <input type="text" name="phoneno" placeholder="your phone number..."><br><br>
+            Payment: <input type="file" name="payments" value=""><br><br>
+            
+            <label for="weight">Your weight:</label>
+            <select name="body_weight" id="s1">
+                <option value="select">Select Your Weight</option>
+                <option value="below 100lbs">Below 100lbs</option>
+                <option value="100-120lbs">100-120lbs</option>
+                <option value="120-150lbs">120-150lbs</option>
+                <option value="above 150lbs">Above 150lbs</option>
+                
+            </select><br><br>
+            
+            <input type="submit" value="Submit">
+            <input type="reset" value="Cancel"><br><br>
+            
+            <abbr title="back"><abbr title="Home"><button class="btn"><a href="home.html"><i class="fa-solid fa-backward-fast"></i></a></button></abbr>
+            <abbr title="Previous"><button class="btn"><a href="classes.html"><i class="fa-solid fa-backward-step"></i></a></button></abbr>
+           </form>
+           
+           <footer class="f1">
+                <p><i class="fa-solid fa-dumbbell"></i>Fit with us, Challenge with us<i class="fa-solid fa-dumbbell"></i></p>
+            </footer>
+            
+            
+    </div>
+
+
+    
+</body>
+</html>

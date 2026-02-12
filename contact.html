@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>package</title>
+    <!--fontawesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.contact{
+    position: relative;
+    min-height: 70vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(map.jpg);
+    background-size: cover;
+}
+.contact .content{
+    max-width: 300px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 200;
+    color: #fff;
+    margin-top: -20px;
+}
+.contact .content p{
+    
+    font-weight: 300;
+    color: #fff;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box{
+    position: relative;
+    padding: 10px 0;
+    display: flex;
+}
+.container .contactInfo .box .icon{
+    min-width: 40px;
+    height: 40px;
+    background: #fff;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+}
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 15px;
+    font-size: 13px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactInfo .box .text h3{
+    font-weight: 300;
+    color: #00bcd4;
+}
+.contact-form{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contact-form h2{
+    font-size: 20px;
+    color: #333;
+    font-weight: 500;
+}
+.contact-form .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+
+}
+.contact-form .inputbox input,
+.contact-form .inputbox textarea
+{
+    width: 100%;
+    padding: 4px 0;
+    font-size: 13px;
+    margin: 8px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contact-form .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 4px 0;
+    font-size: 13px;
+    margin: 8px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contact-form .inputbox input:focus ~ span,
+.contact-form .inputbox input:valid ~ span,
+.contact-form .inputbox textarea:focus ~ span,
+.contact-form .inputbox textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-10px);
+}
+.contact-form .inputbox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+.back{
+            padding: 10px 10px;
+            border-radius: 10px;
+            float: left;
+            width: 50px; 
+            background-color: lightgreen;
+        }
+.a{
+    text-decoration: none;
+    color: #fff;
+}
+/* @media (max-width:991px){
+
+} */
+
+</style>
+</head>
+<body>
+    <section class="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>You can contact Us with these social medias.</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                    <div class="text">
+                        <h3>Address</h3><p><a href="https://www.google.com/search?q=pyay+mapping&oq=pyay+mapping&aqs=chrome..69i57.4813j0j7&sourceid=chrome&ie=UTF-8" class="a">Pyay</a></p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-envelopes-bulk"></i></div>
+                    <div class="text">
+                        <h3>Our Email: </h3><p>bodyvision1102@gmail.com</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                    <div class="text">
+                        <h3>Phone:</h3><p>09-79xxxxxxx</p>
+                    </div>
+                </div>
+                
+                <abbr title="home"><button class="back"><a href="home.html"><i class="fa-solid fa-backward-fast"></i></a></button></abbr>
+                <!--  <abbr title="home"><button class="back"><a href="home.html"><i class="fa-solid fa-caret-left"></i></a></button></abbr>-->
+                
+            </div>
+            
+            
+    	   
+            <div class="contact-form">
+                <form action="Contact_Servlet" method="post">
+                    <h2>Send Message</h2>
+                    <div class="inputbox">
+                        <input type="text" name="fname" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="email" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputbox">
+                        <textarea required="required" name="message"></textarea>
+                        <span>Type Your Message...</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </section>
+
+ 
+</body>
+
+</html>
