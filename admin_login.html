@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="ISO-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Admin</title>
+    <style>
+        body{
+            background-image: url("home2.jpg");
+            background-position: center;
+            background-repeat: no-repeat;         
+            background-size: cover;
+            
+        }
+        .one{
+            list-style-type: none;
+            padding: 5px;
+            text-align: right;
+            width: 90;
+        }
+        .one li{
+            display: inline-block;
+            padding: 10px 20px;
+            list-style-type: none ;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+        }
+        
+         .one a:link{color: aqua;}
+        .one a:visited{color: white;}
+        .one a:hover{color: rgb(4, 179, 83); transition: 0.5s; box-shadow: inset;}
+        
+        .h2{
+            color:white;
+            text-align: right;
+            margin-right: 50px;
+        }
+        .form{
+            text-align: center;
+            background-color: grey;
+            border: 1px solid grey;
+            
+            margin: 50px 400px 30px 450px;
+            border-radius: 20px;
+            opacity: .9;
+        }a
+        .h3{
+            text-align: center;
+            font-weight: bolder;
+        }
+        .p{
+            color:black;
+            margin-left: -80px;
+            margin-right:-40px;
+        }
+        .login{
+            background-color: aqua;
+            border: 1px solid aqua;
+            border-radius: 20px;
+            padding: 5px 70px;
+        }
+        .ac{
+            color:black;
+        }
+        .sign{
+            color:white;
+        }
+        .log{
+            text-decoration: none;
+            color:white;
+        }
+        .s1{
+        color: rgb(5, 1, 1);
+        
+        float: left;
+        margin-left: 20px;
+        font-weight: bold;
+        border: 0.2px solid black;
+        border-radius: 20px;
+        background-color: antiquewhite;
+        padding: 10px 15px;
+        font-family: Castellar;
+     }
+     .link{
+        margin-left: 70px;
+     }
+    </style>
+    
+    
+</head>
+<body>
+    <span class="s1">BODY VISION<i class="fa-brands fa-golang"></i></span>
+    <div>
+    
+        <h2 class="h2"><center><i class="fa-solid fa-dumbbell"></i>Welcome from <span>Body</span> Fitness Center<i class="fa-solid fa-dumbbell"></i></center></h2>
+        <p class="link"><a href="home.html" class="href">Home </a> > LogIn</p>
+    	
+    	
+        
+        <form action="AdminLogin_Servlet" class="form" method="post">
+        	<br><legend class="h3"><h2>Login</h2></legend><br>
+            <label><i class="fa-solid fa-user"></i></label>
+            <input type="text" name="name" placeholder="Enter Your Name..." required pattern="\w+"><br><br><br>
+            <label><i class="fa-solid fa-key"></i></label>
+            <input type="password" name="password" placeholder="Enter Your Password..." required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"><br><br>
+
+            <p class="p">Forgot Password?</p><br> 
+            <input type="submit" name="b1" value="Login"><br><br>
+         </form>
+         		
+                 
+                    
+                    
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!--fontawesome link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            body{
+        background-image: url(pay1.png);
+        background-repeat: no-repeat;
+    }
+          
+            .s1{
+        color: rgb(5, 1, 1);
+        
+        float: left;
+        font-weight: bold;
+        border: 0.2px solid black;
+        border-radius: 20px;
+        background-color: antiquewhite;
+        padding: 10px 15px;
+        font-family: Castellar;
+     }
+     table{
+        
+        border: 1px solid black;
+        margin-left: 600px;
+        padding: 30px 20px;
+        border-radius: 20px;
+       background-color: rgb(161, 206, 186);
+     }
+     td{
+        padding: 10px 20px;
+     }
+     .text{
+        margin-top: -20px;
+        text-align: center;
+     }
+     .pay{
+        border-radius: 50px;
+     }
+     a{
+        text-decoration: none;
+        color: orange;
+     }
+   
+    </style>
+</head>
+<body>
+    <span class="s1">BODY VISION <i class="fa-brands fa-golang"></i></span><br><br><br>
+    <a href="home.html">Home</a>  |<a href=""> Package </a> | Payment Form
+
+	<h2 class="text">6-Months Payment</h2>
+	<h3 class="text">You need to fill your personal data.</h3><br><br>
+
+	<table>
+        
+		<form action="SixMonths_Package_Servlet" class="form" method="post">
+
+			<tr>
+                
+				<td>
+					<label for="name">
+						Name:
+					</label>
+				</td>
+				<td><input type="text" id="name" name="name" required />
+				</td>
+			</tr>
+			<tr>
+				<td><label for="email">
+						Email:
+					</label>
+				</td> 
+				<td><input type="email" id="email" name="email" required />
+				</td>
+			</tr>
+			<tr>
+				<td><label for="telnum">
+						Phone Number:
+					</label>
+				</td>
+				<td><input type="text" id="telnum" name="phone" required />
+				</td>
+			</tr>
+			<tr>
+				<td><label for="address">
+					Address:
+					</label>
+				</td>
+				<td><input type="text" id="address" name="address" required />
+				</td>
+			</tr>
+            
+            <tr>
+                <td>Your Weight:</td>
+                <td><select name="weight" id="" class="input">
+                    <option value="select">Select Your Weight</option>
+                    <option value="below 100lbs">Below 100lbs</option>
+                    <option value="100-120lbs">100-120lbs</option>
+                    <option value="120-150lbs">120-150lbs</option>
+                    <option value="above 150lbs">Above 150lbs</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Your Height:</td>
+                <td>
+                    <select name="height" id="" class="input">
+                        <option value="select">Select Your Height</option>
+                        <option value="below 5'">Below 5'</option>
+                        <option value="5'1'' ">5' 1"</option>
+                        <option value="5'2'' ">5' 2"</option>
+                        <option value="5'3'' ">5' 3"</option>
+                        <option value="5'4'' ">5' 4"</option>
+                        <option value="5'5'' ">5' 5"</option>
+                        <option value="5'6'' ">5' 6"</option>
+                        <option value="5'7'' ">5' 7"</option>
+                        <option value="5'8'' ">5' 8"</option>
+                        <option value="5'9'' ">5' 9"</option>
+                        <option value="5'10'' ">5' 10"</option>
+                        <option value="5'11'' ">5' 11"</option>
+                        <option value="6'and above">6' and above</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+            <td>Payment form</td>
+            <td><input type="file" name="payment" value=""></td>
+            </tr><br>
+            <tr>
+               <td >You can also pay with cash &hearts;</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Send">
+                <input type="reset" value="Cancel">
+                </td>
+            </tr>
+		</form>
+	</table>
+</body>
+
+</html>
+
+  
