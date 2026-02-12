@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--fontawesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        body{
+            background-color: rgb(179, 138, 218);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+            
+        <h2>Payment Form</h2>
+        <form action="" method="POST">
+        <!-- account information start -->
+        <h4>Account</h4>
+        <div class="input_group">
+            <div class="input-box">
+                <input type="text" placeholder="FullName" required="" class="name">
+                <i class="fa-solid fa-user"></i>
+            </div><br>
+            
+        </div>
+        <div class="input_group">
+            
+            <div class="input-box">
+                <input type="email" placeholder="Email Address" required="" class="name">
+                <i class="fa-solid fa-envelope"></i>
+            </div><br>
+        </div>
+        <div class="input_group">
+            <div class="input-box">
+                <input type="text" placeholder="Address" required="" class="name">
+                <i class="fa-solid fa-location-dot"></i>
+            </div><br>
+            
+        </div>
+        <div class="input_group">
+            
+            <div class="input-box">
+                <input type="text" placeholder="City" required="" class="name">
+                <i class="fa-solid fa-city"></i>
+            </div>
+        </div><br>
+        <!--account informatio end-->
+        <!--dob gender start-->
+        <div class="input_group">
+            
+            <div class="input-box">
+                <h4>Date Of Birth</h4>
+                <input type="text" placeholder="DD" required class="dob">
+                <input type="text" placeholder="MM" required class="dob">
+                <input type="text" placeholder="YYYY" required class="dob">
+            </div><br>
+            <div class="input-box">
+                <input type="radio"  required name="gender" id="b1">
+                <label for="b1">Male</label>
+                <input type="radio"  required name="gender" id="b2">
+                <label for="b2">Female</label>
+            </div>
+        </div>
+        <!--dob gender end-->
+        <!--payment details start-->
+        <div class="input_group">
+            <div class="input-box">
+                <h4>Payment Details</h4>
+                <input type="radio" name="pay" class="radio" id="bc1">
+                <label for="bc1"><span><img src="kpay.PNG" alt="" height="30px" width="30px"></span></label>
+                <input type="radio" name="pay" class="radio" id="bc2">
+                <label for="bc2"><span><img src="wave.jpg" alt="" height="30px" width="30px"></span></label>
+                
+            </div>
+        </div>
+        <div class="input_group">
+            <div class="input-box">
+
+            </div>
+        </div>
+        
+        <!--payment details end-->
+        </form>
+        <div class="footer"><input type="submit" name="" id="" value="Send">
+        <input type="button" name="" id="" value="Cancel"></div>
+    </div>
+</body>
+</html>
