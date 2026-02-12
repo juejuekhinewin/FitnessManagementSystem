@@ -1,0 +1,67 @@
+@charset "ISO-8859-1";
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
+
+body{
+ background-color: rgb(167, 173, 173);
+}
+.s1{
+  color: rgb(10, 10, 10);
+  
+  float: left;
+  margin-left: 30px;
+  font-weight: bold;
+  border: 0.2px solid black;
+  border-radius: 20px;
+  background-color: antiquewhite;
+  padding: 10px 15px;
+  font-family: Castellar;
+          }
+          h2{text-align: right;
+          margin-right: 200px; color: black;}
+.h3{
+  padding: 10px 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+a{
+  text-decoration: none;
+}
+.fi-sr-home,.fi-ss-badge-check{
+font-size: 20px;
+margin-left: 20px;
+}
+ul{
+  list-style-type: none;
+  padding: 10px 20px;
+}
+
+
+
+.profile{
+ margin-left: 300px;
+ margin-right: 300px;
+ border: 1px solid black;
+ height: 500px;
+ border-radius: 30px;
+ 
+ background-color: rgb(219, 208, 159);
+ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.image{
+  border-radius: 100px;
+}
+.club{
+  display: flex;
+  padding: 3px 5px;
+}
+.join{
+  background-color: aliceblue;
+  padding: 5px 5px;
+  border-radius: 20px;
+}
+
+table{
+  margin-left: 200px;
+  margin-right:500px;
+}

@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="ISO-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> sign-up</title>
+    <!--fontawesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body{
+            background-image: url("lg2.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        /* div{
+            background-color: antiquewhite;
+            padding: 20px 20px;
+        } */
+        
+        form{
+            padding: 10px 10px;
+            margin: 60px 370px 80px 370px;
+            text-align: center;
+            background-color: grey;
+            opacity: .6;
+            border: 1px solid grey;
+            border-radius: 30px;
+            
+        }
+        .us{
+            font-size: larger;
+        }
+        i{
+            display: inline-flex;
+            
+        }
+        #remember{
+            margin-left: -135px;
+        }
+        .s1{
+        color: rgb(5, 1, 1);
+        
+        float: left;
+        margin-top: 10px;
+        margin-left: 30px;
+        font-weight: bold;
+        border: 0.2px solid black;
+        border-radius: 20px;
+        background-color: antiquewhite;
+        padding: 10px 15px;
+        font-family: Castellar;
+                }
+        .h2{
+            text-align: left;
+            color: white;
+            margin-left: 500px;
+            margin-top: 15px;
+            
+        }
+        span{
+            font-weight: bold;
+            color: azure;
+        }
+        .a{
+            
+            color: white ;
+        }
+        /* .btn{
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: black;
+        } */
+        /* #i3{width: 161px;
+        margin-left: 25px;}*/
+        #la1{
+            margin-right: 10px;
+        }
+        #i4{
+            width: 160px;
+            margin-left: 13px;
+        }
+         button{
+            background-color: black;
+            border-radius: 10px;
+            padding: 10px 20px;
+         }
+         a{
+            text-decoration: none;
+            color: black;
+         }
+         .sign{
+            background-color: aqua;
+            border: 1px solid aqua;
+            border-radius: 20px;
+            color: white;
+            padding: 5px 50px;
+         }
+    </style>
+</head>
+
+<body>
+    <span class="s1">BODY VISION<i class="fa-brands fa-golang"></i></span>
+	<h2 class="h2"><i class="fa-solid fa-dumbbell"></i>Welcome from Our <span>Body Vision</span> Fitness Center<i class="fa-solid fa-dumbbell"></i></h2>
+<div>
+    <form action="Signup_Servlet" class="form" method="post">
+     <table>
+        <legend class="us"><i class="fa-solid fa-user"></i><br>User Sign Up</legend><br><br>
+       
+        
+        <tr>
+        <td>UserName:</td>
+        <td><input title="Username must not be blank and contain only letters" type="text" name="name" placeholder="Enter username..." id="i1" required pattern="[A-Za-z0-9]+"><br><br></td>
+        </tr>
+        
+        <tr>
+        <td>Mobile Number:</td>
+        <td><input  title="Phone number with 0-9 and remaing 9 digit with 0-9" type="text" name="phonenumber" placeholder="Enter phonenumber...." id="i2" required pattern="[0-9]{10,12}"><br><br></td>
+        </tr>
+        
+        <tr>
+        <td>Password:</td>
+        <td><input title="Please enter valid phone number" type="password" name="password" placeholder="Enter password..." id="i3" required="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"><br><br></td>
+        </tr>
+        
+        <tr>
+        <td>Email:</td>
+        <td><input type="email" name="email" placeholder="Enter email..." id="i4"><br><br></td>
+        </tr>
+        
+        <tr>
+        <td>Address:</td>
+        <td><input type="text" name="address" placeholder="Enter address..." id="i5" required pattern="/^[a-zA-Z0-9\s,.'-]{3,}$/./"><br><br></td>
+        </tr>
+        
+        <tr>
+	       <td><p>Already account? <a href="login.html">Click here!</a></p></td>
+	       <td><input type="submit" value="Sign Up"></td>
+	       
+	    </tr>
+      
+      
+     
+     <tr>
+      <td> <a href="#" ><i class="fa-brands fa-facebook"></i></a></td>
+      <td><a href="#"><i class="fa-brands fa-twitter text-dark me-2 "></i></a></td>
+      <td><a href="#"><i class="fa-brands fa-instagram text-dark me-2"></i></a></td>
+      </tr>
+      
+       </table>
+      </form>
+        <abbr title="Home Page"><li><a href="home.html">HOME</a></li></abbr>
+</div>
+</body>
+
+</html>
